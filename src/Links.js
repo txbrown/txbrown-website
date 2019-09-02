@@ -12,7 +12,6 @@ const Links = props => {
   </a>
   <a href="https://www.facebook.com/txbrown/" className="social-link"    target="_blank"
           rel="noopener noreferrer">
-
             <FaFacebook  color="white" />
   </a>
   <a href="https://soundcloud.com/txbrown" className="social-link"    target="_blank"

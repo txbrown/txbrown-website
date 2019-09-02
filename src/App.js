@@ -9,7 +9,7 @@ function App() {
         <p>
           TXBROWN
         </p>
-        <a href="smarturl.it/barbecue-season" target="_blank" rel="noopener">
+        <a href="https://smarturl.it/barbecue-season" target="_blank" rel="noopener">
         <img src={process.env.PUBLIC_URL +"/barbacue__season_cover.png"} className="App-logo" alt="logo" />
         </a>
        <Links />
