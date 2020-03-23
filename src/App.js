@@ -10,13 +10,20 @@ function App() {
       <header className='App-header'>
         <p>TXBROWN</p>
         <AlbumCard
-          url={'https://smarturl.it/barbecue-season'}
-          coverImage={process.env.PUBLIC_URL + '/barbacue__season_cover.png'}
-        />
-        <AlbumCard
           url={'https://smarturl.it/a6ztpz'}
           coverImage={process.env.PUBLIC_URL + '/cold_season_cover.png'}
         />
+
+        <AlbumCard
+          url={'https://smarturl.it/laqxxz'}
+          coverImage={process.env.PUBLIC_URL + '/fading_season_cover.jpg'}
+        />
+
+        <AlbumCard
+          url={'https://smarturl.it/barbecue-season'}
+          coverImage={process.env.PUBLIC_URL + '/barbacue__season_cover.png'}
+        />
+
         <Links
           links={[
             {

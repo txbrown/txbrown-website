@@ -34,30 +34,3 @@ Links.propTypes = {
 };
 
 export default Links;
-
-{
-  /* <a
-href='https://www.instagram.com/txbrown__/'
-className='social-link'
-target='_blank'
-rel='noopener noreferrer'
->
-<FaInstagram color='white' />
-</a>
-<a
-href='https://www.facebook.com/txbrown/'
-className='social-link'
-target='_blank'
-rel='noopener noreferrer'
->
-<FaFacebook color='white' />
-</a>
-<a
-href='https://soundcloud.com/txbrown'
-className='social-link'
-target='_blank'
-rel='noopener noreferrer'
->
-<FaSoundcloud color='white' />
-</a> */
-}

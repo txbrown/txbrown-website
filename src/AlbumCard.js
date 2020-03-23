@@ -3,7 +3,7 @@ import React from 'react';
 
 const AlbumCard = ({ coverImage, url, links }) => {
   return (
-    <a href={url} target='_blank' rel='noopener'>
+    <a href={url} target='_blank' rel='noopener noreferrer'>
       <img src={coverImage} className='App-logo' alt='logo' />
     </a>
   );
