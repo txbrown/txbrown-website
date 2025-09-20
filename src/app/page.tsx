@@ -50,21 +50,13 @@ function App() {
             <h1 className="hero-title">TXBROWN</h1>
             <p className="hero-subtitle">Music Producer • London</p>
             <p className="hero-description">
-              Blending the foundations of hip-hop with jazz and soul to create unique sonic textures.
-              From beat-making to bass guitar, exploring lo-fi and R&B territories while maintaining
-              that core hip-hop essence.
-            </p>
+                        </p>
             <div className="hero-bio">
               <p>
                 TXBROWN is a music producer who blends the foundations of hip-hop with jazz and soul to create sonic textures.
                 His journey has taken him from beat-making to bass guitar, evolving his sound towards lo-fi and R&B territories
-                while maintaining that core hip-hop essence.
-              </p>
-              <p>
-                Based in London, when not producing he is engineering software – two worlds that intersect in creativity and precision.
-                This unique combination of musical artistry and technical expertise brings a distinctive approach to modern production,
-                where analog warmth meets digital innovation through his app Midicircuit, built to help others learn music production
-                in an easy and interactive way.
+                while maintaining that core hip-hop essence. He's based in London and when not producing he is engineering software –
+                two worlds that intersect in Midicircuit, an app he built to help others learn to make music in easy and interactive way.
               </p>
             </div>
             <Links links={socialLinks} />
