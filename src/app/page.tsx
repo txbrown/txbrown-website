@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaSoundcloud } from 'react-icons/fa';
-import AlbumCard from './AlbumCard';
-import './App.css';
-import Links from './Links';
+import Links from '../components/Links/Links';
+import AlbumCard from '@/components/AlbumCard/AlbumCard';
 
 function App() {
   return (
@@ -11,33 +10,33 @@ function App() {
         <p>TXBROWN</p>
         <AlbumCard
           url={'https://smarturl.it/a6ztpz'}
-          coverImage={process.env.PUBLIC_URL + '/cold_season_cover.png'}
+          coverImage='/cold_season_cover.png'
         />
 
         <AlbumCard
           url={'https://smarturl.it/laqxxz'}
-          coverImage={process.env.PUBLIC_URL + '/fading_season_cover.jpg'}
+          coverImage={'/fading_season_cover.jpg'}
         />
 
         <AlbumCard
           url={'https://smarturl.it/barbecue-season'}
-          coverImage={process.env.PUBLIC_URL + '/barbacue__season_cover.png'}
+          coverImage='/barbacue__season_cover.png'
         />
 
         <Links
           links={[
             {
               url: 'https://www.instagram.com/txbrown__/',
-              renderIcon: () => <FaInstagram color='white' />
+              renderIcon: () => <FaInstagram color='white' />,
             },
             {
               url: 'https://www.facebook.com/txbrown/',
-              renderIcon: () => <FaFacebook color='white' />
+              renderIcon: () => <FaFacebook color='white' />,
             },
             {
               url: 'https://soundcloud.com/txbrown',
-              renderIcon: () => <FaSoundcloud color='white' />
-            }
+              renderIcon: () => <FaSoundcloud color='white' />,
+            },
           ]}
         />
       </header>

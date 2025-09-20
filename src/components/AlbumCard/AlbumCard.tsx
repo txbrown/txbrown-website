@@ -1,17 +1,16 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
-const AlbumCard = ({ coverImage, url, links }) => {
+type Props = {
+  coverImage: string;
+  url: string;
+};
+
+const AlbumCard: React.FC<Props> = ({ coverImage, url }) => {
   return (
     <a href={url} target='_blank' rel='noopener noreferrer'>
       <img src={coverImage} className='App-logo' alt='logo' />
     </a>
   );
-};
-
-AlbumCard.propTypes = {
-  coverImage: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
 };
 
 export default AlbumCard;
