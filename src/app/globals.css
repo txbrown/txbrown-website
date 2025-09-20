@@ -39,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.01em;
+  overflow-x: hidden;
 }
 
 .container {
@@ -274,6 +275,21 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 4rem 3rem;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .albums-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -281,34 +297,151 @@ body {
   }
 
   .hero-content {
-    padding: 4rem 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
     order: 2;
+    max-width: 100%;
   }
 
   .hero-image {
-    height: 60vh;
+    height: 50vh;
     order: 1;
     margin-right: 0;
+    width: 100%;
   }
 
   .hero-image img {
     width: 100%;
+    height: 50vh;
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    word-spacing: 0.1em;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .albums-section {
+    padding: 4rem 0;
   }
 
   .albums-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-link a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-link.bandcamp a::after {
+    font-size: 0.65rem;
+    bottom: -1.8rem;
   }
 
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+    max-width: 100%;
   }
 
   .container-wide {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .hero-image {
+    height: 45vh;
+  }
+
+  .hero-image img {
+    height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1;
+    word-break: break-word;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 95%;
+  }
+
+  .hero-bio {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 95%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .social-link a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-link.bandcamp a::after {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container-wide {
+    padding: 0 1rem;
   }
 }
