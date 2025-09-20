@@ -1,22 +1,30 @@
 import React from 'react';
 
-const Links = ({ links }) => {
+type LinkItem = {
+  url: string;
+  renderIcon: () => React.ReactNode;
+};
+
+type Props = {
+  links: LinkItem[];
+};
+
+const Links: React.FC<Props> = ({ links }) => {
   return (
     <ul className='social-links'>
-      {links.map(l => (
-        <li className='social-link'>
+      {links.map((link, index) => (
+        <li key={index} className='social-link'>
           <a
-            href='https://www.instagram.com/txbrown__/'
+            href={link.url}
             target='_blank'
             rel='noopener noreferrer'
           >
-            {l.renderIcon && l.renderIcon()}
+            {link.renderIcon && link.renderIcon()}
           </a>
         </li>
       ))}
     </ul>
   );
 };
-
 
 export default Links;
