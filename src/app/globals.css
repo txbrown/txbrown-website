@@ -229,6 +229,32 @@ body {
   transform: translateY(-2px);
 }
 
+.social-link.bandcamp a {
+  background: var(--brown-primary);
+  color: var(--foreground);
+  border-color: var(--brown-primary);
+  position: relative;
+}
+
+.social-link.bandcamp a::after {
+  content: 'Support the artist';
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  color: var(--brown-medium);
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+
+.social-link.bandcamp a:hover {
+  background: var(--brown-light);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(139, 69, 19, 0.4);
+}
+
 /* About Section */
 .about-section {
   padding: 6rem 0;

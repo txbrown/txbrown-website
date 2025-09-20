@@ -13,7 +13,7 @@ const Links: React.FC<Props> = ({ links }) => {
   return (
     <ul className='social-links'>
       {links.map((link, index) => (
-        <li key={index} className='social-link'>
+        <li key={index} className={`social-link ${link.url.includes('bandcamp') ? 'bandcamp' : ''}`}>
           <a
             href={link.url}
             target='_blank'
