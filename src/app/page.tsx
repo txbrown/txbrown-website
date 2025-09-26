@@ -5,10 +5,16 @@ import AlbumCard from '@/components/AlbumCard/AlbumCard';
 
 function App() {
   const albums = [
+     {
+      title: 'Horizons',
+      url: 'https://txbrown.bandcamp.com/album/horizons',
+      coverImage: '/Horizons Covert Art - Final.jpg',
+    },
+
     {
       title: 'Cold Season',
       url: 'https://txbrown.bandcamp.com/album/cold-season',
-      coverImage: '/cold_season_cover.png',
+      coverImage: '/cold_season_cover.jpeg',
     },
     {
       title: 'Fading Season',
